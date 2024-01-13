@@ -258,7 +258,7 @@ img {
 #header.fixed {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.9);
-  min-height: 77px;
+  /* min-height: 77px; */
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   border-bottom: .1px solid #B5B9C0;
 }
@@ -413,6 +413,11 @@ nav ul li a:hover {
   width: 100%;
   max-width: 469px;
   margin: 28px 0 0 auto;
+  gap: 10px;
+}
+
+#banner .btn-holder .btn {
+  margin: auto;
 }
 
 /*-----------------------------------------------CONTENT-----------------------------------------------*/
@@ -473,9 +478,9 @@ nav ul li a:hover {
   position: relative;
   height: 100%;
   width: 100%;
-  min-height: 1020px;
+  padding-top: 30px;
+  padding-bottom: 307px;
   color: #fff;
-  padding: 30px 0;
 }
 
 #mission .wrapper {
@@ -587,12 +592,14 @@ nav ul li a:hover {
   margin-top: -2px;
   width: 100%;
   max-width: 143px;
+  align-items: center;
 }
 
 #services .card .read a {
   font-size: 13px;
   color: #666666;
   font-weight: 600;
+  margin-right: 26px;
 }
 
 #services .services-con .bottom {
@@ -609,8 +616,8 @@ nav ul li a:hover {
 
 .long-arrow-right {
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-top: 2px solid #666666;
   border-left: 2px solid #666666;
 }
@@ -797,6 +804,8 @@ nav ul li a:hover {
 #projects .gallery {
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #projects .btn-prev-slider,
@@ -867,7 +876,7 @@ nav ul li a:hover {
 }
 
 .img-responsive {
-  max-width: 586px;
+  max-width: 572px;
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 30px;
@@ -876,7 +885,7 @@ nav ul li a:hover {
 
 
 /*CONTACT*/
-#contact {
+#footer #contact {
   position: relative;
   background: #fff;
   width: 100%;
@@ -885,7 +894,7 @@ nav ul li a:hover {
   border-radius: 20px;
 }
 
-#contact .contact-con {
+#footer #contact .contact-con {
   width: 100%;
   max-width: 1235px;
   margin: auto;
@@ -1037,6 +1046,7 @@ form .alert-danger {
 
 #footer .info a {
   font-size: 16px;
+  word-break: break-word;
 }
 
 #footer .info .phone a {
@@ -1065,7 +1075,7 @@ form .alert-danger {
 
 #footer .bottom {
   background: -webkit-linear-gradient(rgb(202, 202, 202), rgb(133, 133, 133));
-  padding-top: 25px;
+  padding-top: 5px;
 }
 
 #footer .nav-holder {
@@ -1098,19 +1108,13 @@ form .alert-danger {
 #footer .bottom p {
   font-size: 14px;
   color: #000;
+  padding: 0;
 }
 
 .techno img {
   width: 52px;
   margin: 0 5px -14px;
 }
-
-
-
-
-
-
-
 
 /*---------------------------------------inner pages-------------------------------------------*/
 
@@ -1197,6 +1201,7 @@ form .alert-danger {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  gap: 10px;
 }
 
 #content .gallery li {
@@ -1258,6 +1263,22 @@ form .alert-danger {
 
 /*RESPONSIVE*/
 @media screen and (max-width: 1407px) {
+  #header {
+    padding: 0;
+  }
+
+  #header.fixed {
+    border: 0;
+  }
+
+  #header.fixed .right.hide-on-scroll {
+    display: none;
+  }
+
+  #header .right {
+    padding-bottom: 10px;
+  }
+
   #header .row {
     justify-content: center;
   }
@@ -1290,13 +1311,8 @@ form .alert-danger {
     min-width: 320px
   }
 
-  #projects .gallery .img3 {
-    display: none;
-  }
 }
 
-
-/*768*/
 @media screen and (max-width: 959px) {
 
   h1,
@@ -1335,9 +1351,7 @@ form .alert-danger {
     font-size: 40px;
   }
 
-  #header {
-    padding-top: 0;
-  }
+
 
   #header .row {
     width: 100%;
@@ -1352,8 +1366,6 @@ form .alert-danger {
     padding-top: 10px;
     justify-content: center;
   }
-
-  #header nav {}
 
   #header nav ul {
     width: 100%;
@@ -1421,8 +1433,7 @@ form .alert-danger {
   }
 
   #mission {
-    min-height: 0;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
   }
 
   #services .top img {
@@ -1445,8 +1456,17 @@ form .alert-danger {
 
 }
 
-
 @media screen and (max-width: 897px) {
+
+  #reviews .reviews-con {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #reviews .reviews-con .right {
+    text-align: center;
+  }
 
   #footer .footer-con,
   #footer .bottom .flex {
@@ -1466,17 +1486,15 @@ form .alert-danger {
 }
 
 @media screen and (max-width: 680px) {
-  #projects .gallery {
-    gap: 0;
+  #welcome .left {
+    text-align: center;
   }
 
-  #projects .gallery .img2 {
-    display: none;
+  #welcome .phone .text-left {
+    text-align: center;
   }
 }
 
-
-/*375*/
 @media screen and (max-width: 580px) {
 
   h1,
@@ -1497,10 +1515,13 @@ form .alert-danger {
     font-size: 50px;
   }
 
+  .ctc-form .flex {
+    display: block;
+  }
+
   #footer nav ul {
     display: block;
   }
 }
 
-/*320*/
 @media screen and (max-width: 374px) {}

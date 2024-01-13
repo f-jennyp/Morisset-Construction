@@ -134,7 +134,7 @@
 									<li <?php $this->helpers->isActiveMenu("gallery"); ?>><a
 											href="<?php echo URL ?>gallery#content">GALLERY</a></li>
 									<li <?php $this->helpers->isActiveMenu("reviews"); ?>><a
-											href="<?php echo URL ?>reviews#content">TESTIMONIALS</a></li>
+											href="<?php echo URL ?>reviews#content">REVIEWS</a></li>
 									<li <?php $this->helpers->isActiveMenu("contact"); ?>><a
 											href="<?php echo URL ?>contact#content">CONTACT</a></li>
 								</ul>
@@ -199,14 +199,16 @@
 	// HEADER FIXED
 	document.addEventListener("DOMContentLoaded", function () {
 		var header = document.getElementById("header");
+		var rightElement = document.querySelector("#header .right");
 
 		function updateHeader() {
 			if (window.scrollY > 0) {
 				header.classList.add("fixed");
+				rightElement.classList.add("hide-on-scroll");
 			} else {
 				header.classList.remove("fixed");
+				rightElement.classList.remove("hide-on-scroll");
 			}
-
 		}
 
 		updateHeader();
@@ -216,16 +218,17 @@
 		});
 	});
 
+
 	// GALLERY
 	$(document).ready(function () {
-			$('.fancy').fancybox({
-				helpers: {
-					title: {
-						type: 'over'
-					}
+		$('.fancy').fancybox({
+			helpers: {
+				title: {
+					type: 'over'
 				}
-			});
-		})
+			}
+		});
+	})
 
 
 </script>
@@ -277,8 +280,6 @@
 
 
 <?php if ($view == "gallery"): ?>
-	<script type="text/javascript" src="public/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
-	<script type="text/javascript" src="public/scripts/jquery.pajinate.js"></script>
 	<script>
 		$(document).ready(function () {
 			$('#gall1').pajinate({

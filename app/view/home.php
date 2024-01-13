@@ -92,7 +92,9 @@
 
 			<div class="services-con">
 				<div class="foreword">WHAT WE OFFER</div>
-				<h2 class="all-caps"><?php $this->info("company_name"); ?> SERVICES</h2>
+				<h2 class="all-caps">
+					<?php $this->info("company_name"); ?> SERVICES
+				</h2>
 
 				<div class="flex">
 					<div class="card con1">
@@ -183,7 +185,9 @@
 				</div>
 
 				<div class="right text-left">
-					<h2 class="all-caps"><?php $this->info("company_name"); ?> REVIEWS</h2>
+					<h2 class="all-caps">
+						<?php $this->info("company_name"); ?> REVIEWS
+					</h2>
 
 					<div class="review-con">
 						<div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -204,9 +208,10 @@
 	<div id="projects">
 		<div class="row">
 			<div class="foreword">OUR LATEST PROJECTS</div>
-			<h2 class="all-caps"><?php $this->info("company_name"); ?> PROJECTS</h2>
+			<h2 class="all-caps">
+				<?php $this->info("company_name"); ?> PROJECTS
+			</h2>
 			<div class="projects-con">
-				<div class="btn-prev-slider"></div>
 				<div id="gall1" class="gallery-container">
 					<ul class="gallery clearfix">
 						<li>
@@ -234,7 +239,6 @@
 						</li>
 					</ul>
 				</div>
-				<div class="btn-next-slider"></div>
 			</div>
 
 			<h1>Steel detailing that elevates your designs</h1>
