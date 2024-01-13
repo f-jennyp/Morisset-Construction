@@ -26,7 +26,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body <?php $this->helpers->bodyClasses($view); ?>>
@@ -47,7 +47,7 @@
 							<li <?php $this->helpers->isActiveMenu("gallery"); ?>><a
 									href="<?php echo URL ?>gallery#content">GALLERY</a></li>
 							<li <?php $this->helpers->isActiveMenu("reviews"); ?>><a
-									href="<?php echo URL ?>reviews#content">TESTIMONIALS</a></li>
+									href="<?php echo URL ?>reviews#content">REVIEWS</a></li>
 							<li <?php $this->helpers->isActiveMenu("contact"); ?>><a
 									href="<?php echo URL ?>contact#content">CONTACT</a></li>
 						</ul>
@@ -104,11 +104,11 @@
 
 				<div class="btn-holder flex">
 					<div class="btn">
-						<a href="<?php echo URL ?>#content">GET STARTED</a>
+						<a href="<?php echo URL ?>contact#content">GET STARTED</a>
 					</div>
 
 					<div class="btn btn2">
-						<a href="<?php echo URL ?>#content">FREE ESTIMATE</a>
+						<a href="<?php echo URL ?>contact#content">FREE ESTIMATE</a>
 					</div>
 				</div>
 			</div>

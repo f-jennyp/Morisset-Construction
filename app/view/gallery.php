@@ -6,27 +6,6 @@
 				<ul class="gallery clearfix">
 					<li>
 						<a data-fancybox-group="default" class="thumbnail fancy" title=""
-							href="public/images/gallery/1.jpg">
-							<img loading="lazy" class="img-responsive" src="public/images/gallery/1.jpg" alt="gallery">
-						</a>
-					</li>
-
-					<li>
-						<a data-fancybox-group="default" class="thumbnail fancy" title=""
-							href="public/images/gallery/2.jpg">
-							<img loading="lazy" class="img-responsive" src="public/images/gallery/2.jpg" alt="gallery">
-						</a>
-					</li>
-
-					<li>
-						<a data-fancybox-group="default" class="thumbnail fancy" title=""
-							href="public/images/gallery/3.jpg">
-							<img loading="lazy" class="img-responsive" src="public/images/gallery/3.jpg" alt="gallery">
-						</a>
-					</li>
-
-					<li>
-						<a data-fancybox-group="default" class="thumbnail fancy" title=""
 							href="public/images/gallery/4.jpg">
 							<img loading="lazy" class="img-responsive" src="public/images/gallery/4.jpg" alt="gallery">
 						</a>
@@ -36,6 +15,34 @@
 						<a data-fancybox-group="default" class="thumbnail fancy" title=""
 							href="public/images/gallery/5.jpg">
 							<img loading="lazy" class="img-responsive" src="public/images/gallery/5.jpg" alt="gallery">
+						</a>
+					</li>
+
+					<li>
+						<a data-fancybox-group="default" class="thumbnail fancy" title=""
+							href="public/images/gallery/6.jpg">
+							<img loading="lazy" class="img-responsive" src="public/images/gallery/6.jpg" alt="gallery">
+						</a>
+					</li>
+
+					<li>
+						<a data-fancybox-group="default" class="thumbnail fancy" title=""
+							href="public/images/gallery/7.jpg">
+							<img loading="lazy" class="img-responsive" src="public/images/gallery/7.jpg" alt="gallery">
+						</a>
+					</li>
+
+					<li>
+						<a data-fancybox-group="default" class="thumbnail fancy" title=""
+							href="public/images/gallery/8.jpg">
+							<img loading="lazy" class="img-responsive" src="public/images/gallery/8.jpg" alt="gallery">
+						</a>
+					</li>
+
+					<li>
+						<a data-fancybox-group="default" class="thumbnail fancy" title=""
+							href="public/images/gallery/9.jpg">
+							<img loading="lazy" class="img-responsive" src="public/images/gallery/9.jpg" alt="gallery">
 						</a>
 					</li>
 				</ul>

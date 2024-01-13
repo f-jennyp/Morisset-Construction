@@ -1,5 +1,11 @@
 <footer>
 	<div id="footer">
+		<div id="maps">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2732.859827769298!2d-71.29135152324828!3d46.76765934553234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb8913284746679%3A0x20d08406e5ef10f3!2sMorisset%20Construction!5e0!3m2!1sen!2sph!4v1705018007223!5m2!1sen!2sph"
+				style="border:0;" allowfullscreen="" loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
 		<div class="row">
 
 			<div id="contact">
@@ -12,17 +18,20 @@
 						<form action="sendContactForm" method="post" class="sends-email ctc-form">
 							<div class="flex">
 								<label><span class="ctc-hide">Name</span>
-									<input type="text" name="name" placeholder="Name">
+									<input type="text" name="name" placeholder="Name:">
 								</label>
-								<label><span class="ctc-hide">Email</span>
-									<input type="text" name="email" placeholder="Email">
-								</label>
+
 								<label><span class="ctc-hide">Phone</span>
-									<input type="text" name="phone" placeholder="Phone">
+									<input type="text" name="phone" placeholder="Phone:">
+								</label>
+
+								<label><span class="ctc-hide">Email</span>
+									<input type="text" name="email" placeholder="Email:">
 								</label>
 							</div>
 							<label><span class="ctc-hide">Message</span>
-								<textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+								<textarea name="message" cols="30" rows="10"
+									placeholder="Message / Questions:"></textarea>
 							</label>
 
 							<label for="g-recaptcha-response"><span class="ctc-hide">Recaptcha</span></label>
@@ -46,8 +55,8 @@
 
 								<!-- <div class="g-recaptcha"></div> -->
 								<div class="btn-holder">
-									<button type="submit" class="ctcBtn btn hvr-grow hvr-sweep-to-top" disabled>Submit
-										Form</button>
+									<button type="submit" class="ctcBtn btn hvr-grow hvr-sweep-to-top" disabled>SUBMIT
+										FORM</button>
 								</div>
 							</div>
 						</form>
@@ -107,44 +116,52 @@
 				</div>
 			</div>
 
-			<!-- <div class="bottom flex">
-				<div class="nav-holder">
-					<div class="flex">
-						<nav>
-							<ul>
-								<li <?php $this->helpers->isActiveMenu("home"); ?>><a href="<?php echo URL ?>">HOME</a>
-								</li>
-								<li <?php $this->helpers->isActiveMenu("about"); ?>><a
-										href="<?php echo URL ?>about#content">ABOUT</a></li>
-								<li <?php $this->helpers->isActiveMenu("services"); ?>><a
-										href="<?php echo URL ?>services#content">SERVICES</a></li>
-								<li <?php $this->helpers->isActiveMenu("gallery"); ?>><a
-										href="<?php echo URL ?>gallery#content">GALLERY</a></li>
-								<li <?php $this->helpers->isActiveMenu("reviews"); ?>><a
-										href="<?php echo URL ?>reviews#content">TESTIMONIALS</a></li>
-								<li <?php $this->helpers->isActiveMenu("contact"); ?>><a
-										href="<?php echo URL ?>contact#content">CONTACT</a></li>
-							</ul>
-						</nav>
+		</div>
+		<div class="bottom">
+			<div class="row">
+				<div class="flex">
+					<div class="nav-holder">
+						<div class="flex">
+							<nav>
+								<ul>
+									<li <?php $this->helpers->isActiveMenu("home"); ?>><a
+											href="<?php echo URL ?>">HOME</a>
+									</li>
+									<li <?php $this->helpers->isActiveMenu("about"); ?>><a
+											href="<?php echo URL ?>about#content">ABOUT</a></li>
+									<li <?php $this->helpers->isActiveMenu("services"); ?>><a
+											href="<?php echo URL ?>services#content">SERVICES</a></li>
+									<li <?php $this->helpers->isActiveMenu("gallery"); ?>><a
+											href="<?php echo URL ?>gallery#content">GALLERY</a></li>
+									<li <?php $this->helpers->isActiveMenu("reviews"); ?>><a
+											href="<?php echo URL ?>reviews#content">TESTIMONIALS</a></li>
+									<li <?php $this->helpers->isActiveMenu("contact"); ?>><a
+											href="<?php echo URL ?>contact#content">CONTACT</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+
+
+					<div class="copyrights text-right">
+						<p class="copy">
+							©
+							<?php echo date("Y"); ?>.
+							<span class="all-caps">
+								<?php $this->info("company_name"); ?>.
+							</span> All Rights Reserved.
+							<?php if ($this->siteInfo['policy_link']): ?>
+								<a href="<?php $this->info("policy_link"); ?>">Privacy Policy</a>.
+							<?php endif ?>
+						</p>
+						<p class="techno">
+							<a href="http://technodreamoutsourcing.com/">Web Design</a> Done by <img loading="lazy"
+								src="public/images/hd-logo.png" alt="">
+						</p>
 					</div>
 				</div>
 
-
-				<div class="copyrights">
-					<p class="copy">
-						©
-						<?php echo date("Y"); ?>.
-						<?php $this->info("company_name"); ?>. ALL RIGHTS RESERVED.
-						<?php if ($this->siteInfo['policy_link']): ?>
-							<a href="<?php $this->info("policy_link"); ?>">Privacy Policy</a>.
-						<?php endif ?>
-					</p>
-					<p class="techno">
-						<a href="http://technodreamoutsourcing.com/">Web Design</a> Done by <img loading="lazy"
-							src="public/images/hd-logo.png" alt="">
-					</p>
-				</div>
-			</div> -->
+			</div>
 		</div>
 	</div>
 </footer>
@@ -155,6 +172,8 @@
 <script src="<?php echo URL; ?>public/scripts/responsive-menu.js"></script>
 <script src="https://unpkg.com/sweetalert2@7.20.10/dist/sweetalert2.all.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="public/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+<script type="text/javascript" src="public/scripts/jquery.pajinate.js"></script>
 
 
 <script>
@@ -197,41 +216,18 @@
 		});
 	});
 
-	// DROPDOWN SERVICES
-	function myFunction() {
-		var dropdownContent = document.getElementById("myDropdown");
-		dropdownContent.classList.toggle("show-down");
-	}
-
-	window.onclick = function (e) {
-		if (!e.target.matches('.dropbtn')) {
-			var dropdowns = document.getElementsByClassName("dropdown-content");
-			for (var i = 0; i < dropdowns.length; i++) {
-				var openDropdown = dropdowns[i];
-				if (openDropdown.classList.contains('show-down')) {
-					openDropdown.classList.remove('show-down');
+	// GALLERY
+	$(document).ready(function () {
+			$('.fancy').fancybox({
+				helpers: {
+					title: {
+						type: 'over'
+					}
 				}
-			}
-		}
-	}
+			});
+		})
 
-	// DROPUP FOOTER SERVICES
-	function myFunction2() {
-		var dropupContent = document.getElementById("myDropup");
-		dropupContent.classList.toggle("show-up");
-	}
 
-	window.onclick = function (e) {
-		if (!e.target.matches('.dropupbtn')) {
-			var dropups = document.getElementsByClassName("dropup-content");
-			for (var i = 0; i < dropups.length; i++) {
-				var openDropup = dropups[i];
-				if (openDropup.classList.contains('show-up')) {
-					openDropup.classList.remove('show-up');
-				}
-			}
-		}
-	}
 </script>
 
 <?php if ($this->siteInfo['cookie']): ?>
@@ -300,9 +296,6 @@
 	</script>
 <?php endif; ?>
 
-
-<a class="cta" href="tel:<?php $this->info("phone"); ?>"><span
-		style="display: block; width: 1px; height: 1px; overflow: hidden;">Call To Action Button</span></a>
 
 <?php $this->checkSuspensionFooter(); ?>
 </body>

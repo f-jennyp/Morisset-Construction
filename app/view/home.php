@@ -4,7 +4,7 @@
 		<div class="row flex">
 			<div class="left text-left">
 				<div class="foreword">WELCOME TO</div>
-				<h1>
+				<h1 class="all-caps">
 					<?php $this->info("company_name"); ?>
 				</h1>
 				<h3>IN BUSINESS SINCE 2008</h3>
@@ -76,7 +76,7 @@
 					needs, leaving nothing behind.</h3>
 
 				<div class="btn">
-					<a href="<?php echo URL ?>about#content">LEARN MORE</a>
+					<a href="<?php echo URL ?>contact#content">FREE ESTIMATE</a>
 				</div>
 			</div>
 		</div>
@@ -92,7 +92,7 @@
 
 			<div class="services-con">
 				<div class="foreword">WHAT WE OFFER</div>
-				<h2>MORISSET CONSTRUCTION SERVICES</h2>
+				<h2 class="all-caps"><?php $this->info("company_name"); ?> SERVICES</h2>
 
 				<div class="flex">
 					<div class="card con1">
@@ -118,7 +118,7 @@
 
 				<div class="bottom flex">
 					<div class="btn">
-						<a href="<?php echo URL ?>about#content">LEARN MORE</a>
+						<a href="<?php echo URL ?>services#content">ALL SERVICES</a>
 					</div>
 
 					<div class="phone">
@@ -183,7 +183,7 @@
 				</div>
 
 				<div class="right text-left">
-					<h2>MORISSET CONSTRUCTION REVIEWS</h2>
+					<h2 class="all-caps"><?php $this->info("company_name"); ?> REVIEWS</h2>
 
 					<div class="review-con">
 						<div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -204,13 +204,13 @@
 	<div id="projects">
 		<div class="row">
 			<div class="foreword">OUR LATEST PROJECTS</div>
-			<h2>MORISSET CONSTRUCTION PROJECTS</h2>
+			<h2 class="all-caps"><?php $this->info("company_name"); ?> PROJECTS</h2>
 			<div class="projects-con">
 				<div class="btn-prev-slider"></div>
 				<div id="gall1" class="gallery-container">
 					<ul class="gallery clearfix">
 						<li>
-							<a data-fancybox-group="default" class="thumbnail fancy" title=""
+							<a data-fancybox-group="default" class="thumbnail fancy img1" title=""
 								href="public/images/gallery/1.jpg">
 								<img loading="lazy" class="img-responsive" src="public/images/gallery/1.jpg"
 									alt="gallery">
@@ -218,7 +218,7 @@
 						</li>
 
 						<li>
-							<a data-fancybox-group="default" class="thumbnail fancy" title=""
+							<a data-fancybox-group="default" class="thumbnail fancy img2" title=""
 								href="public/images/gallery/2.jpg">
 								<img loading="lazy" class="img-responsive" src="public/images/gallery/2.jpg"
 									alt="gallery">
@@ -226,7 +226,7 @@
 						</li>
 
 						<li>
-							<a data-fancybox-group="default" class="thumbnail fancy" title=""
+							<a data-fancybox-group="default" class="thumbnail fancy img3" title=""
 								href="public/images/gallery/3.jpg">
 								<img loading="lazy" class="img-responsive" src="public/images/gallery/3.jpg"
 									alt="gallery">
@@ -248,16 +248,9 @@
 			</div>
 
 			<div class="btn">
-				<a href="<?php echo URL ?>#content">FREE ESTIMATE</a>
+				<a href="<?php echo URL ?>contact#content">FREE ESTIMATE</a>
 			</div>
 		</div>
-	</div>
-
-	<div id="maps">
-		<iframe
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2732.859827769298!2d-71.29135152324828!3d46.76765934553234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb8913284746679%3A0x20d08406e5ef10f3!2sMorisset%20Construction!5e0!3m2!1sen!2sph!4v1705018007223!5m2!1sen!2sph"
-			style="border:0;" allowfullscreen="" loading="lazy"
-			referrerpolicy="no-referrer-when-downgrade"></iframe>
 	</div>
 
 </div>
