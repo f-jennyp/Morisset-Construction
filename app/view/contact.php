@@ -1,5 +1,5 @@
 <div id="content">
-	<!-- <div id="contact">
+	<div id="contact">
 		<div class="row">
 			<div class="contact-con">
 				<h1>Contact Form</h1>
@@ -40,6 +40,6 @@
 				</form>
 			</div>
 		</div>
-	</div> -->
+	</div>
 
 </div>

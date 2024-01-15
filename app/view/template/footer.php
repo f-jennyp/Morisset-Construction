@@ -105,13 +105,13 @@
 
 					<div class="socials">
 						<a href="<?php $this->info('fb_link') ?>" target="_blank"><img loading="lazy"
-								src="public/images/content/fb.png" alt=""></a>
+								src="public/images/content/fb.png" alt="facebook"></a>
 						<a href="<?php $this->info('ig_link') ?>" target="_blank"><img loading="lazy"
-								src="public/images/content/ig.png" alt=""></a>
+								src="public/images/content/ig.png" alt="instagram"></a>
 						<a href="<?php $this->info('tt_link') ?>" target="_blank"><img loading="lazy"
-								src="public/images/content/tt.png" alt=""></a>
+								src="public/images/content/tt.png" alt="twitter"></a>
 						<a href="<?php $this->info('li_link') ?>" target="_blank"><img loading="lazy"
-								src="public/images/content/li.png" alt=""></a>
+								src="public/images/content/li.png" alt="linkedin"></a>
 					</div>
 				</div>
 			</div>
